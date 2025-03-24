@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - SoundSphere</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .contact-container {
+      padding: 40px 20px;
+      text-align: center;
+      height: 76vh;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .contact-header {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    .contact-form {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 30px;
+      background-color: #f4f4f4;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      height: 30vh;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      width: 90%;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+    }
+    .contact-form button {
+      padding: 15px 25px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .contact-form button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <div class="contact-container">
+    <div class="contact-header">Get in Touch</div>
+    <div class="contact-form">
+      <form action="submit_form.php" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>&copy; 2023 SoundSphere. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
